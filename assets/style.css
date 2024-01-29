@@ -14,3 +14,6 @@ svg{
     width: 1em;
     aspect-ratio: 1;
 }
+.completed {
+    text-decoration: line-through;  
+}
