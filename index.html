@@ -21,7 +21,7 @@
             <!-- SECTION Todo list -->
             <div class="m-2" v-if="tasks.lenght !== 0">
                 <div v-if="tasks.lenght !== 0" class="m-3 d-flex justify-content-between task border rounded p-2" v-for="(task, index) in tasks" :key="index">
-                    <span :class="{ 'completed': task.done }">
+                    <span @click="completeTask(index)" :class="{ 'completed': task.done }">
                         {{task.text}}
                     </span>
 
